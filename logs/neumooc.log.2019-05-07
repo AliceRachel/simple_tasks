@@ -1,0 +1,201 @@
+2019-05-07 17:17:12,256 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 17:17:12,403 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@64ba3208] to prepare test instance [com.neusoft.neumooc.test.TaskDAOTest@158a3b2e]>
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.neusoft.neumooc.test.TaskDAOTest': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.neusoft.neumooc.dao.TaskDAO com.neusoft.neumooc.test.TaskDAOTest.taskDAO; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:385)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:82)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:199)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:251)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:253)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:216)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:82)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:60)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:67)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:162)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.neusoft.neumooc.dao.TaskDAO com.neusoft.neumooc.test.TaskDAOTest.taskDAO; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:555)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1261)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1009)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:904)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:527)
+	... 28 more
+2019-05-07 17:20:18,200 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 17:20:18,409 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@64ba3208] to prepare test instance [com.neusoft.neumooc.test.TaskDAOTest@158a3b2e]>
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.neusoft.neumooc.test.TaskDAOTest': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.neusoft.neumooc.dao.TaskDAO com.neusoft.neumooc.test.TaskDAOTest.taskDAO; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:385)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:82)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:199)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:251)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:253)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:216)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:82)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:60)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:67)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:162)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.neusoft.neumooc.dao.TaskDAO com.neusoft.neumooc.test.TaskDAOTest.taskDAO; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:555)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1261)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1009)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:904)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:527)
+	... 28 more
+2019-05-07 17:21:34,561 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 17:21:34,739 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@64ba3208] to prepare test instance [com.neusoft.neumooc.test.TaskDAOTest@158a3b2e]>
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.neusoft.neumooc.test.TaskDAOTest': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.neusoft.neumooc.dao.TaskDAO com.neusoft.neumooc.test.TaskDAOTest.taskDAO; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:385)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:82)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:199)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:251)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:253)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:216)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:82)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:60)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:67)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:162)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.neusoft.neumooc.dao.TaskDAO com.neusoft.neumooc.test.TaskDAOTest.taskDAO; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:555)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1261)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1009)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:904)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:527)
+	... 28 more
+2019-05-07 17:43:07,762 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 17:43:07,845 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3e821657] to prepare test instance [com.neusoft.neumooc.test.TaskDAOTest@1d131e1b]>
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.neusoft.neumooc.test.TaskDAOTest': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.neusoft.neumooc.dao.TaskDAO com.neusoft.neumooc.test.TaskDAOTest.taskDAO; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:385)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:82)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:199)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:251)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:253)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:216)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:82)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:60)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:67)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:162)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.neusoft.neumooc.dao.TaskDAO com.neusoft.neumooc.test.TaskDAOTest.taskDAO; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:555)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.neusoft.neumooc.dao.TaskDAO] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1261)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1009)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:904)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:527)
+	... 28 more
+2019-05-07 17:44:13,929 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:05:58,566 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:11:27,453 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:15:13,158 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:21:16,840 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:22:08,249 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:22:08,454 DEBUG [com.neusoft.neumooc.dao.TaskDAOImpl] - <sql-task->select taskid taskId,taskname taskName,status,userid userId,builddate buildDate from task_tasks where 1=1 and getBuildDate like:buildDate>
+2019-05-07 18:22:08,471 ERROR [com.neusoft.core.common.exception.DAOException] - <No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate' :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:22:08,471 ERROR [com.neusoft.neumooc.dao.TaskDAOImpl] - <TaskDAOImpl的方法findAll错误:No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate'>
+2019-05-07 18:22:08,471 ERROR [com.neusoft.core.common.exception.DAOException] - <TaskDAOImpl的方法findAll错误: :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:22:08,517 ERROR [com.neusoft.core.common.exception.DAOException] - <No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate' :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:22:08,517 ERROR [com.neusoft.neumooc.dao.TaskDAOImpl] - <TaskDAOImpl的方法findAll错误:No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate'>
+2019-05-07 18:22:08,517 ERROR [com.neusoft.core.common.exception.DAOException] - <TaskDAOImpl的方法findAll错误: :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:22:09,223 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:22:09,306 DEBUG [com.neusoft.neumooc.dao.TaskDAOImpl] - <sql-task->select taskid taskId,taskname taskName,status,userid userId,builddate buildDate from task_tasks where 1=1 and getBuildDate like:buildDate>
+2019-05-07 18:22:09,311 ERROR [com.neusoft.core.common.exception.DAOException] - <No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate' :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:22:09,311 ERROR [com.neusoft.neumooc.dao.TaskDAOImpl] - <TaskDAOImpl的方法findAll错误:No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate'>
+2019-05-07 18:22:09,312 ERROR [com.neusoft.core.common.exception.DAOException] - <TaskDAOImpl的方法findAll错误: :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:22:09,317 ERROR [com.neusoft.core.common.exception.DAOException] - <No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate' :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:22:09,318 ERROR [com.neusoft.neumooc.dao.TaskDAOImpl] - <TaskDAOImpl的方法findAll错误:No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate'>
+2019-05-07 18:22:09,318 ERROR [com.neusoft.core.common.exception.DAOException] - <TaskDAOImpl的方法findAll错误: :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:42:03,111 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:42:03,238 DEBUG [com.neusoft.neumooc.dao.TaskDAOImpl] - <sql-task->select taskid taskId,taskname taskName,status,userid userId,builddate buildDate from task_tasks where 1=1 and builddate like :buildDate>
+2019-05-07 18:42:03,736 ERROR [com.neusoft.core.common.exception.DAOException] - <No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate' :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:42:03,736 ERROR [com.neusoft.neumooc.dao.TaskDAOImpl] - <TaskDAOImpl的方法findAll错误:No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate'>
+2019-05-07 18:42:03,737 ERROR [com.neusoft.core.common.exception.DAOException] - <TaskDAOImpl的方法findAll错误: :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:42:32,515 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:42:32,651 DEBUG [com.neusoft.neumooc.dao.TaskDAOImpl] - <sql-task->select taskid taskId,taskname taskName,status,userid userId,builddate buildDate from task_tasks where 1=1 and builddate like :buildDate>
+2019-05-07 18:42:33,167 ERROR [com.neusoft.core.common.exception.DAOException] - <No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate' :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:42:33,167 ERROR [com.neusoft.neumooc.dao.TaskDAOImpl] - <TaskDAOImpl的方法findAll错误:No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate'>
+2019-05-07 18:42:33,167 ERROR [com.neusoft.core.common.exception.DAOException] - <TaskDAOImpl的方法findAll错误: :Throwable[No value supplied for the SQL parameter 'buildDate': No value registered for key 'buildDate']>
+2019-05-07 18:43:22,201 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:43:22,328 DEBUG [com.neusoft.neumooc.dao.TaskDAOImpl] - <sql-task->select taskId taskid,taskname taskName,status,userid userId,builddate buildDate from task_tasks where 1=1  and builddate like :buildDate>
+2019-05-07 18:45:03,811 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:45:04,080 DEBUG [com.neusoft.neumooc.dao.TaskDAOImpl] - <sql-task->select taskId taskid,taskname taskName,status,userid userId,builddate buildDate from task_tasks where 1=1  and builddate like :buildDate>
+2019-05-07 18:46:59,858 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :E:\CustomclassForNeu\NeuFrameDemo\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-07 18:47:00,127 DEBUG [com.neusoft.neumooc.dao.TaskDAOImpl] - <sql-task->select taskId taskid,taskname taskName,status,userid userId,builddate buildDate from task_tasks where 1=1  and builddate like :buildDate>

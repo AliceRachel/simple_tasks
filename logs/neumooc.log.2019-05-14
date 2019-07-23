@@ -1,0 +1,2 @@
+2019-05-14 16:36:22,853 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :F:\NeuFrameDemo\webapp\WEB-INF\classes\sql>
+2019-05-14 16:42:50,395 DEBUG [org.myframework.jdbc.sqlconfig.impl.XmlSqlConfig] - <load sqlconfig from dirctory :F:\NeuFrameDemo\webapp\WEB-INF\classes\sql>

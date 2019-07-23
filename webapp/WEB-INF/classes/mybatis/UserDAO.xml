@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.neumooc.dao.UserDAO">
+
+  <select id="findByUserName"  resultType="User">
+  <!-- id方法名，resultType返回类型 -->
+  <!-- sql语句  传入参数-->
+  select userid userId, 
+  username userName,
+  password passWord from task_users where username=#{userName}
+  </select>
+
+
+<!--  
+  <resultMap id="BaseResultMap" type="com.jy.domain.Group">
+    <id column="gid" jdbcType="INTEGER" property="gId" />
+    <result column="gname" jdbcType="VARCHAR" property="gName" />
+    <result column="gdetail" jdbcType="VARCHAR" property="gDetail" />
+  </resultMap>
+
+
+  <sql id="Base_Column_List">
+    id, userName, userId
+  </sql>
+
+
+   <select id="findAllMap"  resultType="hashmap">
+    select 
+    <include refid="Base_Column_List" />
+    from git_user
+  </select>
+    
+  
+  	<select id="findGitUserByParams"  resultType="GitUser">
+    select 
+    <include refid="Base_Column_List" />
+    from git_user where id=#{id} or userName=#{userName}
+  	</select>
+  
+  	 <select id="findGitUserNoParams"  resultType="GitUser">
+    select 
+    <include refid="Base_Column_List" />
+    from git_user where id=#{0} or userName=#{1}
+  	</select>
+  	
+  	<select id="findGitUserByMap"  resultType="GitUser">
+    select 
+    <include refid="Base_Column_List" />
+    from git_user where id=#{id} or userName=#{userName}
+  	</select>
+  	
+  	<select id="selectCount"  resultType="int">
+	    select 
+	   	count(*)
+	    from git_user 
+  	</select>
+  	
+  	 <select id="findGitUser"  resultType="GitUser">
+	    select 
+	    <include refid="Base_Column_List" />
+	    from git_user
+	    <where>
+	    	<if test="user.userName!=null and user.userName!= '' ">
+	    		userName like CONCAT(CONCAT('%', #{user.userName}),'%')  
+	    	</if>
+    	</where>
+    	limit #{paginating.pageIndex},#{paginating.pageSize}
+  	</select>
+  	 --> 
+ 
+</mapper>
+
+ 

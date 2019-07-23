@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.neumooc.dao.TaskDAO">
+	<sql id="baseTaskWhereSql">
+
+		<where>
+			<if test="t.taskName!=null and t.taskName!= '' ">
+				taskName like CONCAT(CONCAT('%', #{t.taskName}),'%')
+			</if>
+
+			<if test="t.buildDate!=null and t.buildDate!= '' ">
+				buildDate like CONCAT(CONCAT('%', #{t.buildDate}),'%')
+			</if>
+		</where>
+	</sql>
+
+	<!-- 分页 -->
+	<select id="findAll" resultType="Task">
+		<!-- id方法名，resultType返回类型 -->
+		<!-- sql语句 传入参数 -->
+		select taskid taskId,taskname taskName,
+		status,userid userId,builddate
+		buildDate
+		from task_tasks
+
+		<include refid="baseTaskWhereSql" />
+		<!-- 分页 -->
+		order by #{p.sort} #{p.order}
+		<if test="p.pageSize>0">
+			limit #{p.pageIndex}, #{p.pageSize}
+		</if>
+	</select>
+
+	<!-- 总计 -->
+	<select id="getCount" resultType="int">	
+		select count(taskId)
+		from task_tasks
+		<include refid="baseTaskWhereSql" />
+	</select>
+	
+	<!-- 添加一条数据 -->
+	<insert id="addTask">
+		
+		insert into task_tasks(taskid,taskname,status,userid,builddate)
+		 values(#{t.taskId},#{t.taskName},#{t.status},#{t.userId},NOW())
+	</insert>
+	<!-- 更新一条数据 -->
+	<update id="doUpdate">
+		update task_tasks  set taskname=#{t.taskName},status=#{t.status}
+		 where taskid=#{t.taskId}
+	</update>
+	<!-- 删除一条数据 -->
+	<delete id="doDelete">
+		delete from task_tasks 
+		where taskid=#{taskId}
+	</delete>
+	<!-- 查找一条数据 -->
+	<select id="findTaskByName">
+		select taskid taskId,taskname taskName,
+		status,builddate buildDate
+		from task_tasks 
+		 where taskid=#{taskId}
+	</select>
+	
+
+</mapper>
+
+ 
